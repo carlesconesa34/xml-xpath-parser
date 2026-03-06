@@ -140,6 +140,16 @@ print()
 
 
 
+print("Apellidos de todos los hombres:")
+for apellidos_hombres in doc.xpath("//alumno[sexo='Hombre']"):
+    print(apellidos_hombres.findtext("apellido1") + " " + apellidos_hombres.findtext("apellido2"))
+print()
+
+
+
+
+
+
 
 
 
