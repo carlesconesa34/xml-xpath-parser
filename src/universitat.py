@@ -104,6 +104,12 @@ for asignaturas_segundo_trimestre in doc.xpath("//asignatura[trimestre='2']/nomb
 print()
 
 
+print("Nombre de las asignaturas que no tienen 4 créditos teóricos:")
+print()
+for asignaturas_segundo_trimestre in doc.xpath("//asignatura[creditos_teoricos!='4']/nombre/text()"):
+    print(asignaturas_segundo_trimestre)
+print()
+
 
 
 
