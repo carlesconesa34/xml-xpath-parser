@@ -83,6 +83,24 @@ for carrera in carreras:
 print()
 
 
+# print(" Apellidos y Nombre de los alumnos con beca.")
+# print()
+# for alumno_con_beca in doc.xpath(""):
+    # print(nombre_alumno_proyecto)
+# print()
+
+
+print("Nombre de las asignaturas de la titulación c04:")
+print()
+for asignaturas_c04 in doc.xpath("//asignatura[@titulacion='c04']/nombre/text()"):
+    print(asignaturas_c04)
+print()
+
+
+
+
+
+
 
 
 
