@@ -65,6 +65,12 @@ for carreras_con_subdirector in doc.xpath("//carrera[subdirector!='']/nombre/tex
 print()
 
 
+print("Nombre de los alumnos que estén haciendo proyecto:")
+print()
+for nombre_alumno_proyecto in doc.xpath("//alumno/estudios[proyecto!='']/../nombre/text()"):
+    print(nombre_alumno_proyecto)
+print()
+
 
 
 
