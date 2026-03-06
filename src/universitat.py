@@ -2,6 +2,7 @@ from lxml import etree
 
 
 doc = etree.parse("xml/universitat.xml")
+root=doc.getroot()
 
 
 print("\nNombre de la universidad:")
