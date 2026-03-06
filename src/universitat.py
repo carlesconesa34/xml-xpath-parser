@@ -120,6 +120,17 @@ print(ultimo_alumno.find("estudios").find("carrera").get("codigo"))
 print()
 
 
+print("Código de las asignaturas que estudian mujeres:\n")
+asignaturas = []
+for asignaturas_mujeres in doc.xpath("//alumno[sexo='Mujer']/estudios/asignaturas/asignatura/@codigo"):
+    if(asignaturas_mujeres not in asignaturas):
+        asignaturas.append(asignaturas_mujeres)
+for asignatura in asignaturas:
+    print(asignatura)
+print()
+
+
+
 
 
 
