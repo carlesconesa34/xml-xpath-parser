@@ -97,6 +97,13 @@ for asignaturas_c04 in doc.xpath("//asignatura[@titulacion='c04']/nombre/text()"
 print()
 
 
+print("Nombre de las asignaturas de segundo trimestre:")
+print()
+for asignaturas_segundo_trimestre in doc.xpath("//asignatura[trimestre='2']/nombre/text()"):
+    print(asignaturas_segundo_trimestre)
+print()
+
+
 
 
 
