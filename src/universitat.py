@@ -112,6 +112,16 @@ for asignaturas_segundo_trimestre in doc.xpath("//asignatura[creditos_teoricos!=
 print()
 
 
+print("Código de la carrera que estudia el último alumno:")
+print()
+alumnos = root.find("alumnos")
+ultimo_alumno = alumnos[len(alumnos) - 1]
+print(ultimo_alumno.find("estudios").find("carrera").get("codigo"))
+print()
+
+
+
+
 
 
 
