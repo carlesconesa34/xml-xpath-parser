@@ -35,3 +35,13 @@ print()
 for nombre_alumno in doc.xpath("//alumno/nombre/text()"):
     print(nombre_alumno)
 print()
+
+
+print("Identificadores de todas las carreras:")
+print()
+for id_carrera in doc.xpath("//carrera/@id"):
+    print(id_carrera)
+print()
+
+
+
