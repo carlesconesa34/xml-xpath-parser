@@ -130,6 +130,12 @@ for asignatura in asignaturas:
 print()
 
 
+print("Nombre de los alumnos que matriculados en la asignatura a02.\n")
+for alumnos_a02 in doc.xpath("//alumno/estudios/asignaturas/asignatura[@codigo='a02']/../../../nombre/text()"):
+    print(alumnos_a02)
+print()
+
+
 
 
 
