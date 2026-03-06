@@ -44,4 +44,14 @@ for id_carrera in doc.xpath("//carrera/@id"):
 print()
 
 
+print("Datos de la carrera cuyo identificador es c01:")
+print()
+for datos_c01 in doc.xpath("//carrera[@id='c01']//text()"):
+    print(datos_c01)
+print()
+
+
+
+
+
 
