@@ -72,5 +72,19 @@ for nombre_alumno_proyecto in doc.xpath("//alumno/estudios[proyecto!='']/../nomb
 print()
 
 
+print("Códigos de las carreras en las que hay algún alumno matriculado:")
+print()
+carreras = []
+for carreras_con_alumnos in doc.xpath("//alumno/estudios/carrera/@codigo"):
+    if(carreras_con_alumnos not in carreras):
+        carreras.append(carreras_con_alumnos)
+for carrera in carreras:
+    print(carrera)
+print()
+
+
+
+
+
 
 
