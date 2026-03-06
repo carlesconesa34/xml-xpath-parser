@@ -51,6 +51,11 @@ for datos_c01 in doc.xpath("//carrera[@id='c01']//text()"):
 print()
 
 
+print("Centro en que se estudia de la carrera cuyo id es c02:")
+print()
+for centro_c02 in doc.xpath("//carrera[@id='c02']/centro/text()"):
+    print(centro_c02)
+print()
 
 
 
