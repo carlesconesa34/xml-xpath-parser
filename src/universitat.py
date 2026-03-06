@@ -58,5 +58,13 @@ for centro_c02 in doc.xpath("//carrera[@id='c02']/centro/text()"):
 print()
 
 
+print("Nombre de las carreras que tengan subdirector:")
+print()
+for carreras_con_subdirector in doc.xpath("//carrera[subdirector!='']/nombre/text()"):
+    print(carreras_con_subdirector)
+print()
+
+
+
 
 
