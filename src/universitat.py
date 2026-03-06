@@ -27,7 +27,11 @@ print("Años de plan de estudio de las carreras:")
 print()
 for plan_carrera in doc.xpath("//carrera/plan/text()"):
     print(plan_carrera)
+print()
 
 
-
-    
+print("Nombres de todos los alumnos:")
+print()
+for nombre_alumno in doc.xpath("//alumno/nombre/text()"):
+    print(nombre_alumno)
+print()
